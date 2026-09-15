@@ -1,3 +1,51 @@
+# GPS-Gaussian Live Reconstruction
+
+This repository is a research fork of the official
+[GPS-Gaussian](https://github.com/aipixel/GPS-Gaussian) implementation.
+
+It is being extended as part of my Master's thesis at the University of Bremen
+for live / pseudo-live 3D reconstruction using synchronized moving cameras.
+
+## Thesis Direction
+
+The original GPS-Gaussian implementation targets generalizable pixel-wise
+3D Gaussian Splatting for real-time human novel-view synthesis.
+
+My thesis investigates how the pipeline can be extended from controlled,
+fixed-camera inputs toward synchronized moving-camera capture.
+
+## Current / Planned Contributions
+
+- Custom RGB and foreground-mask capture pipeline
+- Dynamic per-frame camera intrinsics and extrinsics
+- Unreal Engine based synthetic capture and validation
+- Camera coordinate-system conversion and pose validation
+- Automated image and mask preprocessing
+- Stereo geometry and camera-baseline experiments
+- Synchronized moving-camera input
+- Live / pseudo-live reconstruction workflow
+- GPU performance profiling and optimization
+
+## Technology Stack
+
+Python · PyTorch · OpenCV · CUDA · NumPy · Open3D · COLMAP  
+C++ · CMake · Linux · Docker · Git/GitHub  
+Unreal Engine · ROS2
+
+## Upstream Project
+
+This work is based on:
+
+**GPS-Gaussian: Generalizable Pixel-wise 3D Gaussian Splatting
+for Real-time Human Novel View Synthesis**
+
+Official repository:
+https://github.com/aipixel/GPS-Gaussian
+
+Please refer to the original repository and publication for the base method,
+license, pretrained models, and citation information.
+
+
 <div align="center">
 
 # <b>GPS-Gaussian</b>: Generalizable Pixel-wise 3D Gaussian Splatting for Real-time Human Novel View Synthesis
